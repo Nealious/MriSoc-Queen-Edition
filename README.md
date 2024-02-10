@@ -1,5 +1,5 @@
 # MriSoc-Queen-Edition
-A modified version of the [mrisoc](https://github.com/mriscoc/Ender3V2S1.git) Ender 3 v2 / S1 binary for the Ender 3 v2 neo.
+A modified version of the [mrisoc](https://github.com/mriscoc/Ender3V2S1.git) Ender-3-v2/S1 binary for the Ender-3-v2-neo.
 - Supports BlTouch/CrTouch on ender 3 v2 neo.
 - Supports Marlin Unified Bed Leveling.
 - Supports Model Predictive Temperature Control
@@ -21,5 +21,6 @@ A modified version of the [mrisoc](https://github.com/mriscoc/Ender3V2S1.git) En
   - C510 Un : lock/unlock the screen (C510 U1 to unlock)
   - C562 En : invert the Extruder (E1 to invert)
   - C810 An Bn Cn Dn En : sets up the toolbar shortcuts A..E to functions 0..n (0 disable that shortcut)
-  - C851 Sn [Zn] Mn : Set probe Z feed speed (S) in mm/min, Multiple probing (Mn>1) or disables it (M0), in manual mesh version, Z parameter can be used to set a manual Z-offset. 
+  - C851 Sn [Zn] Mn : Set probe Z feed speed (S) in mm/min, Multiple probing (Mn>1) or disables it (M0), in manual mesh version, Z parameter can be used to set a manual Z-offset.
+- **Note:** This binary was compiled for the Neo model only, it will not work as intended on other Ender-3-V2 models, Installation is done through the same process of updating (format sdcard to fat 32, copy the binary file on the card, insert into printer, and turn on. The printer will "update" as normal.
 - **Warning:** The temperature limits and Speed controls have been removed and replaced by user specified limits under the advanced menu. If the printer is asked to go to a certain temparature within the user set range it will, regardless of possibility of damage so be careful. 
